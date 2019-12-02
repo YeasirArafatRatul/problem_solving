@@ -1,17 +1,18 @@
-first = True
+
+signal = True
 while True:
     try:
         dataset = []
         string = str(input())
         for i in string:
             if i == '"':
-                if first:
+                if signal:
                     dataset.append('``')
-                    #dataset.append('`')
+                    
                 else:
                     dataset.append("''")
-                    #dataset.append("'")
-                first = not first
+                #for every closing quotation we need to make the signal = False 
+                signal = not signal
             else:
                 dataset.append(i)
 
