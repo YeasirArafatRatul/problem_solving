@@ -21,14 +21,14 @@ pattern = r'\+?\d*[eE]?\.?\-?\d*[eE]?\-?\d*'
 '''
 
 import re
-expression_integer = r'^[-+]?(\d+)$'
-expression_real = r'^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$'
+expr_integer = r'^[-+]?(\d+)$'
+expr_real = r'^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$'
 while True:
     constant = input().strip()
     if constant == '*':
         break
     else:
-        if re.search(expression_real,constant) and not re.search(expression_integer,constant):
+        if re.search(expr_real,constant) and not re.search(expr_integer,constant):
             print(f'{constant} is legal.')
         else:
             print(f'{constant} is illegal.')
