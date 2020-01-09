@@ -18,10 +18,11 @@ a = '1.2,1.0e-55,1e-12 +4.1234567890E-9999,'
 
 pattern = r'\+?\d*[eE]?\.?\-?\d*[eE]?\-?\d*'
 
+
 '''
 
 import re
-expr_integer = r'^[-+]?(\d+)$'
+expr_integer = r'^[+-]?(\d+)$'
 expr_real = r'^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$'
 while True:
     constant = input().strip()
