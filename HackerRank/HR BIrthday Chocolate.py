@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
     s = list(map(int, input().rstrip().split()))
 
-    dm = input().rstrip().split()
+    dm = input().strip().split()
 
     d = int(dm[0])
 
