@@ -1,1 +1,1 @@
-# problem_sloving
+# problem_solving
